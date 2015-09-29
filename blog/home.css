@@ -1,0 +1,75 @@
+body {
+	color: black;
+	font-family: 'Roboto Condensed', sans-serif;
+	margin:3%;
+
+}
+
+/*#main { 
+	background-color: #0BE0C6;
+
+}*/
+
+header {
+	text-align:center;
+	margin-top:5em;
+}
+
+h1 {
+	font-size:3em;
+	margin-bottom:0;
+	background-color: #0BE0C6;
+	display:block;
+	width:50%;
+	margin-left:auto;
+	margin-right:auto;
+	border-style:solid;
+	border-width:thin;
+}
+
+h4 {
+	font-size:1.5em;
+	margin-top:2px;
+	margin-bottom:30px;
+	margin-left:20px;
+}
+
+.emoji {
+	width:1em;
+
+}
+
+nav {
+	text-align:center;
+	/*background-color: #0BE0C6;
+	padding:1em;*/
+}
+
+.landing_nav {
+	width:10em;
+}
+
+li {
+	display: inline;
+	margin:1em;
+	}
+
+a:hover, a:active {
+	opacity:0.5;
+}
+
+#social_media {
+	width:30%;
+	margin-top:5em;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	bottom:0;
+
+}
+
+
+.social {
+	height:2.5em;
+	margin:1.5em;
+}

@@ -55,6 +55,9 @@ a:hover, a:active {
 	color: #E542D0;
 }
 
+.cont {
+	text-align:right;
+}
 /*main {
 	margin-right:22%;
 }*/
@@ -113,7 +116,7 @@ code p {
 }
 
 #social_media {
-	width:30%;
+	width:100%;
 	margin-top:5em;
 	margin-left:auto;
 	margin-right:auto;

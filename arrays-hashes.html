@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>Jessie Richardson | Developer</title>
+<link rel="stylesheet" type="text/css" href="stylesheets/blog.css">
+<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+	<header>
+		<h1>Jessie Richardson</h1>
+		<h4>#code <img class="emoji" src="imgs/computer_emoji.png"> | #scuba <img class="emoji" src="imgs/fish_emoji.png">  | #travel <img class="emoji" src="imgs/earth_emoji.png"> | #nyc <img class="emoji" src="imgs/statueofliberty_emoji.png"> </h4>
+	</header>
+	<nav>
+		<ul>
+			<li><a href = "#.html">Blog</a></li>
+			<li><a href = "#.html">Projects</a></li> 
+			<li><a href = "#.html">Resume</a></li>
+			<li><a href = "#.html">Contact</a></li>
+		</ul>
+	</nav>
+	<main>
+		<aside>
+			<img id="profile" src = "imgs/profile_pic.png">
+			<p>ENTP. Explorer. Athlete. Maker of things. I believe in taking calculated risks and striving to manifest the outer limits of your imagination. I fell in love with code because it feels like playing with grown-up Legos. </p>
+		</aside>
+		<article>
+
+</div>
+				<div class = "blog_post">
+				<p>Thursday, October 8th, 2015</p>
+				<h4>Arrays and Hashes</h4> 
+
+<p>Hello! This is my first technical blog post as a Phase-0 DBC student. I probably should have written a little introduction about myself and how I ended up at Dev Bootcamp, but we'll save that for later because I'm a little behind at the moment.</p>
+
+<p>In this post, I will be discussing arrays and hashes. Since arrays are a bit more simple, and involve fewer ways to create and access them, let's start there.</p>
+
+<h4>What is an array?</h4>
+<p>An array, in the programming context, is essentially a list or index. This list can contain any of the following or combination of the following: numbers, strings (which means words or full sentences), or characters. We'll get into characters in a bit, but for now, here are some examples of valid arrays, in the context of the backend language, Ruby:</p>
+
+<code>
+<p>array_1 = [3, 8, 7, 14, 2]</p>
+
+<p>array_2 = ['dog', 'cat', 'horse', 'wolf']</p>
+
+<p>array_3 = [4, 'apple', 'pear', 9, '9', 'mountain', 566]</p>
+</code>
+
+<p>You'll notice that in array_3, there are a combination of numbers and strings. The important thing to remember is that, though you can use both strings and numbers in an array, strings MUST be put in quotation marks, otherwise, Ruby won't understand what kind of input you're giving it.</p>
+
+<p>Consequently, you may have noticed that, in this array, I included a "9" and a "'9'". One with quotation marks and one without. Well, as you may have guessed, based on what I mentioned with regards to strings vs. numbers, that "9" without quotation marks, will be read as a number, while "'9'" WITH quotation marks, will be read as a string.</p>
+
+<p>Why is this important to remember? If you want to do anything with the elements in this array later, Ruby will need to know how to evaluate them and a number of things can happen depending on how you choose to express them. For example:</p>
+
+<code>
+<p>Number + Number</p>
+<p> 9 + 9</p>
+<p>=> 18</p>
+<br>
+<p>String + String</p>
+<p> '9' + '9'</p>
+<p>=> 99</p>
+<br>
+<p>Number + String</p>
+<p> 9 + '9'</p>
+<p>=> Error</p>
+</code>
+
+<p>You'll notice that in "Number + String" we get an error. That's because Ruby sees the 9 without quotation marks and interprets it as a number, and then looks for the other number that is supposed to be added to it. When it doesn't find another number, it yields an error. Ruby is not smart enough to figure out what you were trying to do, and the same thing would happen if you reversed it and tried to add a number to a string.</p>
+
+<p>Let's move on. Now that we know what an array is, let's talk about what it can be used for. To put things in context, I'm going to use my favorite arcade game, Big Buck Hunter, as an example.</p>
+
+<img class = "embedded_image" src = "imgs/big_buck_hunter.png">
+
+<p>Every day, people across the nation play Big Buck Hunter. Scores are constantly changing and new players creating accounts. Whenever you start a new game, there is always a list of the top 10 players with the best scores on the home screen, but to make this example shorter, we're just going to use the top five. So let's say we have this list:</p>
+
+<code>
+<p>1. Jessie (that's me! #mydream)</p>
+<p>2. Sagan</p>
+<p>3. Jon</p>
+<p>4. Dave</p>
+<p>5. Lee</p>
+</code>
+
+<p>As an array, this index would look like this:</p>
+
+<code>
+<p>top_five_array = ['Jessie', 'Sagan', 'Jon', 'Dave', 'Lee']</p>
+</code>
+
+<p>If we wanted to access each of these values, here's how we would tell the array which one we want.</p>
+
+<code>
+<p>top_five_array[0] => 'Jessie'</p>
+<p>top_five_array[1] => 'Sagan'</p>
+<p>top_five_array[2] => 'Jon'</p>
+<p>top_five_array[3] => 'Dave'</p>
+<p>top_five_array[4] => 'Lee'</p>
+</code>
+
+<p>As I'm sure you've noticed, though 'Jessie' is the first element in the array, we call that element by using the index "[0]" as opposed to "[1]". This is because, in programming, counting always starts from 0 as opposed to 1.</p>
+
+<p>Using this array as an example, let's say one day, Alec comes along and beats Jon's score of  522,000 with a score of 522,650. This would put him in 3rd place. So we need to replace Jon's name with Alec's. To do this, we need to access index 2 in the array (because again, programming count begins with 0.)</p>
+
+<p>Here's how we do this:</p>
+
+<code>
+top_5_array[2] = 'Alec'
+</code>
+
+<p>Then we print the array new array. To do this, we use the the command, "puts" which means "print string." The new array should look like this:</p>
+
+<code>
+<p>1. Jessie</p>
+<p>2. Sagan</p>
+<p>3. Alec</p>
+<p>4. Dave</p>
+<p>5. Lee</p>
+</code>
+ 
+<p>But wait a minute! Alec may have beaten Jon's score of 522,000, but his score is still less than Sagan's, which is 632,400. So we can't just replace his name with Alec's. Here's what we need to do to ensure that Jon gets his rightly deserved 4th place. Working with the original array, we write:</p>
+
+<code>
+<p>top_5_array.insert(2, 'Alec')</p>
+<p>puts top_five_array</p>
+</code>
+
+<p>Here's the list we get:</p>
+
+<code>
+<p>1. Jessie</p>
+<p>2. Sagan</p>
+<p>3. Alec</p>
+<p>4. Jon</p>
+<p>5. Dave</p>
+<p>6. Lee</p>
+</code>
+
+<p>Ok, so that works! However, we have another problem: This is supposed to be a top 5 list, not a top 6 list. We need to get rid of the last name on the list. We will do this by using the "pop" method, which removes the last element in an array.</p>
+
+<p>Again, working with the original array, here's what we need to enter:</p>
+
+<code>
+<p>top_5_array.insert(2, 'Alec')</p>
+<p>top_5_array.pop</p>
+<p>puts top_five_array</p>
+</code>
+
+<p>And here's our output:</p>
+
+<code>
+<p>1. Jessie</p>
+<p>2. Sagan</p>
+<p>3. Alec</p>
+<p>4. Jon</p>
+<p>5. Dave</p>
+</code>
+
+<p>Ok, cool, so that's our brief intro to array tutorial, which can get into much greater complexity, but for the purpose of giving you an idea about what it does, hopefully this made some sense. </p>
+			</div>
+		</article>
+	</main>
+	<footer>
+		<div id="social_media">
+		<a href = "https://twitter.com/jess_richardson"> = <img class="social" src = "imgs/twitter.png"></a>
+		<a href = "https://www.linkedin.com/in/richardsonjessie"><img class="social"  src = "imgs/linkedin.png"></a>
+		<a href = "https://github.com/jesskrich"> <img class="social" src = "imgs/github.png"></a>
+		<p><small>&copy; 2015 Jessie Richardson</small><p>
+		</div>
+		
+	</footer>
+</body>
+</html>

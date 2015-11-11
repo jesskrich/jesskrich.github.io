@@ -2,6 +2,7 @@ body {
 	color: black;
 	font-family: 'Roboto Condensed', sans-serif;
 	margin:3%;
+	min-width:950px;
 
 }
 
@@ -73,6 +74,12 @@ article {
 
 }
 
+.blurb {
+	margin-top: 3em;
+	width: 55%;
+	padding-left:1em;
+}
+
 aside {
 	width:18%;
 	/*border-style:solid;
@@ -112,8 +119,22 @@ code p {
 	padding:2em;
 	margin-bottom:1em;
 	width:85%;
+	min-width:200px;
 
 }
+
+pre {
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:0;
+	text-align: left;
+	width:100%;
+	min-width:100%;
+	background-color:white;
+	/*white-space: pre-wrap;*/
+	overflow-x: auto;
+}
+
 
 #social_media {
 	width:100%;

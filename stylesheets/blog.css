@@ -136,6 +136,42 @@ pre {
 }
 
 
+.project_blurb {
+	background-color:rgba(156, 169, 173, 0.3);
+	padding:1em;
+	margin-bottom:1em;
+	margin-right:0;
+	width:90%;
+	min-width:200px;
+	height:153px;
+
+}
+
+.project_blurb img {
+	width: 30%;
+	float:left;
+	margin-right:1em;
+}
+
+.project_blurb p {
+	/*display:inline;*/
+	padding-top: 0;
+	margin-top:0;
+	padding-left: 1em;
+	vertical-align:top;
+}
+
+/*.project_blurb p {
+	display:inline;
+	float:right;
+	}*/
+
+/*.project_image {
+	width:30%;
+	float:left;
+	}*/
+
+
 #social_media {
 	width:100%;
 	margin-top:5em;
@@ -150,4 +186,5 @@ pre {
 .social {
 	height:2.5em;
 	margin:1.5em;
+	clear:both;
 }

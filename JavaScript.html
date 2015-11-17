@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>Jessie Richardson | Developer</title>
+<link rel="stylesheet" type="text/css" href="stylesheets/blog.css">
+<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+	<header>
+		<h1>Jessie Richardson</h1>
+		<h4>#code <img class="emoji" src="imgs/computer_emoji.png"> | #scuba <img class="emoji" src="imgs/fish_emoji.png">  | #travel <img class="emoji" src="imgs/earth_emoji.png"> | #nyc <img class="emoji" src="imgs/statueofliberty_emoji.png"> </h4>
+	</header>
+	<nav>
+		<ul>
+			<li><a href = "blog.html">Blog</a></li>
+			<li><a href = "#.html">Projects</a></li> 
+			<li><a href = "#.html">Resume</a></li>
+			<li><a href="about.html">About</a></li>
+		</ul>
+	</nav>
+	<main>
+		<aside>
+			<img id="profile" src = "imgs/profile_pic.png">
+			<p>ENTP. Explorer. Athlete. Maker of things. I believe in taking calculated risks and striving to manifest the outer limits of your imagination. I fell in love with code because it feels like playing with grown-up Legos. </p>
+		</aside>
+		<article>
+				<div class = "blog_post">
+				<p>Monday, November 16th, 2015</p>
+				<h4>Ruby Hashes vs. JavaScript Objects</h4> 
+				<p>This week, we made the jump from 3 weeks of staright up Ruby to JavaScript. Clean, elegant, communicative Ruby, to fickle, mysterious, unnessarily syntaxily complex JavaScript. I doubt that's even a proper english phrase, but my english has gone so far out the window since I started programming that I'm surprised I don't speak exclusively in symbols at this point. Sometimes I'll send a friend a text and when I go back and read it, it looks like it came from a person who was having a stroke.</p>
+
+				<img class = "embedded_image" src = "imgs/javascript.jpg">
+
+				<p>All that aside, let's have a brief talk about the difference between JS objects and Ruby hashes. I decided to discuss this particlaur distinguishment because on my first day of JS, we learned about objects and there was a question in the reflection section after an exercise that asked us what we felt objects were most closely related to in Ruby. At first I typed in "Classes."" Then I deleted it. Then I typed in "Hashes." Deleted again, and retyped "Classes." Wash, rinse, and repeat about 12 times. So basically, that's why this is my blog post topic for tonight.</p>
+
+				<p>To start, let's recall what hashes and classes are before we move on to JS objects and their similarity to Ruby classes. As explained in the previous blog post, a Ruby class is a method that allows the programmer to write and organize methods that are expected to be used over and over on related data sets. For example, let's say we own a bar and wanted to keep track of approximately how many drinks people are ordering each night, but our calculations will be different depending on the type of spirit. We might write a class called "liquor" that takes a standard bottle size, 750ml, multiplies that by the number of bottles consumed per night, and then divides that number by 1.5 oz., which is the standard size of a shot. If we wanted to do the same thing with beer, we'd have to write a different class because the calculations will be different. Therefore we'd write a class called "Beer" which takes the size of a keg, 15.5 gallons, multiplies by the number of kegs consumed per night and then divides by a pint. Of course, both these classes would require a programmer to add an extra step to convert measurements so that they are consistent, but this was just to give you an example.
+
+				<p>So we know that classes are a way to repeatedly run methods on related data sets, but what if we just wanted to organize the data and not do anything to it. We would use a hash. For example, using our liquor analogy, we might have a key value pair for each beverage to keep track of prices. In Ruby, that might look a little something like this: </p>
+
+<pre>
+alcohol = 
+		{
+		"Jameson" => 19, 
+		"Patron" => 35, 
+		"Popov" =>10
+		}
+</pre>
+
+				<p>With a hash, all the keys must be unique, but the values can be the same. If we wanted to print all of the prices, we'd write something like this:</p>
+
+<pre>
+p alcohol["Jameson"]
+p alcohol["Patron"]
+p alcohol["Popov"]
+</pre>
+
+				<p>And our output would look like this:</p>
+
+<pre>
+19
+35
+10
+</pre>
+
+				<p>So as you can see, only the prices, or values, got printed when we accessed the keys using bracket notation. It's important to remember that each key must be unique in order for Ruby not to get confused. In Javascript, we have a similar built-in method called an object. When we create an object, it must follow the same rules as a hash, with the key being unique, but the value can be the same. The syntax just looks a little bit different:</p>	
+
+<pre>
+alcohol = {
+			jameson: 19,
+			patron: 35,
+			popov: 10
+			}
+</pre>	
+				<p>Looks pretty similar huh? The only difference is that with Javascript, the keys, or "properties" as they're referred to in this language, cannot be strings because we need to use dot notation to access them. Here's how we'd print this:</p>
+<pre>
+console.log(alcohol.jameson);
+console.log(alcohol.patron);
+console.log(alcohol.popov);
+</pre>
+				<p>Considering how nearly identical these are, I bet you're wondering how I initially thought objects in Javascript were more similar to Ruby classes, as opposed to hashes. Well, that was just simply because the example we were working with this week, involved data on for a person (name, weight, age, etc., all used as keys) and we often used a person as an example of a class. A simple mistaken association on my part. I often tend to think of hashes as being used more as a collection of related objects and their values as opposed to a single object and all it's properties.</p>
+
+				<p>Well, that's it for today! By the way kids, stay away from Popov.</p>
+
+			</div>
+		</article>
+	</main>
+	<footer>
+		<div id="social_media">
+		<a href = "https://twitter.com/jess_richardson"> = <img class="social" src = "imgs/twitter.png"></a>
+		<a href = "https://www.linkedin.com/in/richardsonjessie"><img class="social"  src = "imgs/linkedin.png"></a>
+		<a href = "https://github.com/jesskrich"> <img class="social" src = "imgs/github.png"></a>
+		<p><small>&copy; 2015 Jessie Richardson</small><p>
+		</div>
+		
+	</footer>
+</body>
+</html>

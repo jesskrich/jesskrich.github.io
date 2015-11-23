@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>Jessie Richardson | Developer</title>
+<link rel="stylesheet" type="text/css" href="stylesheets/ruby-cheat.css">
+<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+<!--TYPEWRITER FONT-->
+<link href='https://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Faster+One|Roboto' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+<header>
+<img src = "imgs/ruby2.png">
+<h1>Ruby Cheat Sheet</h1>
+</header>
+	<div id = "clear_bar">
+	</div>
+	<div id = "whole_container">
+	</div>
+	<div id = "left_container"> 
+	<div class = "cheat">
+	<h3>Variables</h3>
+	<pre class = "prettyprint">
+x = "string" 
+	=>"string"
+x = 6 
+	=> 6</pre>
+	</div>
+
+	<!--METHODS-->
+	<div class = "cheat">
+	<h3>Methods</h3>
+	<pre class = "prettyprint">
+def my_method(x,y)
+	x + y
+end
+	
+my_method(2,4)
+	=> 6</pre>
+	</div>
+		<div class = "cheat">
+	<h3>Loops</h3>
+	<h4>For</h4>
+	<pre class = "prettyprint">
+for i in (0..5) do
+    p i
+end
+	=> 1
+	   2
+	   3
+	   4
+	   5</pre>
+		<h4>While</h4>
+		<pre class = "prettyprint">
+i = 0
+while i < 5 do
+    p i
+    i +=1
+end
+	=> 1
+	   2
+	   3
+	   4</pre>
+	</div>
+		<div class = "cheat">
+	<h3>Hashes</h3>
+	<pre class = "prettyprint">
+hash = {'one' => 1, 'two' => 2, 'three' => 3}
+hash['two']
+	=> 2
+hash_symbol_key = {one: 1, two: 2, three: 3}
+hash[:one]
+	=> 1
+hash_symbol_key[:four] = 4
+p hash_symbol_key
+	=> {one: 1, two: 2, three: 3, four: 4}</pre>
+	</div>
+
+</div>
+<div id = "right_container">
+
+	<!--OPERATORS-->
+		<div class = "cheat">
+	<h3>Operators</h3>
+	<pre class = "prettyprint">
+x = 4
+y = 6
+z = 4
+    
+#addition/subtraction   
+x + y 
+    => 10
+y - z
+    => 2
+    
+#multiplication/division
+x * z 
+    => 16
+y / z
+    => 1 #ruby rounds down to the nearest
+        #whole number when dividing integers
+        #if there is a remainder
+        
+#modulos
+y % x
+    => 2 #modulos is remainder of one integer
+        #divided by another</pre>
+	</div>
+	<div class = "cheat">
+	<h3>Conditionals</h3>
+	<pre class = "prettyprint">
+x = 8
+y = 3
+
+if x < y
+    puts "#{x} is less than #{y}"
+else
+    p "#{x} is greater than #{y}"
+end
+		=> "8 is greater than 3"</pre>
+	</div>
+		<div class = "cheat">
+	<h3>Arrays</h3>
+	<pre class = "prettyprint">
+array = ['a','b','c','d','e']
+
+array[2]
+	=> 'c' 
+
+array.push('f')
+	=> ['a','b','c','d','e','f']
+
+array.pop
+	=> 'f'
+
+array.length
+	=> 5 #after we popped 'f'
+</pre>
+	</div>
+
+	</div>
+	</body>
+<footer>
+		<div id="social_media">
+		<a href = "https://twitter.com/jess_richardson"><img class="social" src = "imgs/twitter.png"></a>
+		<a href = "https://www.linkedin.com/in/richardsonjessie"><img class="social"  src = "imgs/linkedin.png"></a>
+		<a href = "https://github.com/jesskrich"> <img class="social" src = "imgs/github.png"></a>
+		<p><small>&copy; 2015 Jessie Richardson</small><p>
+		</div>
+		
+	</footer>
+<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+</body>
+
+</html>
+

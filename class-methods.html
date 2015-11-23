@@ -6,6 +6,8 @@
 <title>Jessie Richardson | Developer</title>
 <link rel="stylesheet" type="text/css" href="stylesheets/blog.css">
 <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+<!--TYPEWRITER FONT-->
+<link href='https://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
@@ -16,7 +18,7 @@
 	<nav>
 		<ul>
 			<li><a href = "blog.html">Blog</a></li>
-			<li><a href = "#.html">Projects</a></li> 
+			<li><a href = "projects.html">Projects</a></li> 
 			<li><a href = "#.html">Resume</a></li>
 			<li><a href="about.html">About</a></li>
 		</ul>
@@ -25,6 +27,13 @@
 		<aside>
 			<img id="profile" src = "imgs/profile_pic.png">
 			<p>ENTP. Explorer. Athlete. Maker of things. I believe in taking calculated risks and striving to manifest the outer limits of your imagination. I fell in love with code because it feels like playing with grown-up Legos. </p>
+			<div class = "feed">
+		<a href = "#.html"><p>&clubs; Ruby Hashes vs. JavaScript Objects</p></a>
+		<a href = "#.html"><p>&diams; Class Methods</p></a>
+		<a href = "#.html"><p>&hearts; Women in Tech</p></a>
+		<a href = "#.html"><p>&diams; Group By</p></a>
+		<a href = "#.html"><p>&diams; Arrays and Hashes</p></a>
+		</div>
 		</aside>
 		<article>
 				<div class = "blog_post">
@@ -95,46 +104,6 @@ class CraigslistApt
 	end
 end
 
-	<!--def rent
-		if @price / @bedrooms <= 1500 
-			@affordability = "STUPID CHEAP"
-		elsif @price <= 2000
-			@affordability = "Affordable"
-		else
-			@affordability = "Liz Taylor Luxurious"
-		end
-	end
-
-	def location
-		if @neighborhood == "Williamsburg"
-			@fantasy_neighborhood = "Prime Williamsburg!"
-		elsif @neighborhood == "Bushwick"
-			@fantasy_neighborhood = "Williamsburg"
-		elsif @neighborhood == "East New York"
-			@fantasy_neighborhood = "Bushwick"
-		elsif @neighborhood =="Bedstuy"
-			@fantasy_neighborhood = "Bushwick"
-		elsif @neighborhood == "Crown Heights"
-			@fantasy_neighborhood = "Park Slope"
-		else
-			@fantasy_neighborhood = "Up and coming neighborhood! Lot's of artists and musicians!"
-		end
-	end
-
-	def rent
-		if @price / @bedrooms <= 1500 
-			@affordability = "STUPID CHEAP"
-		elsif @price <= 2000
-			@affordability = "Affordable"
-		else
-			@affordability = "Liz Taylor Luxurious"
-		end
-	end
-
-	def ad
-		puts "#{@description} #{@affordability} #{@bedrooms} Bed #{@fantasy_neighborhood} Apartment. WON'T LAST!!!!"
-	end
-end-->
 </pre>
 				<p>In the second block of code, above, I've created an if/else conditional statement that sets a new instance variable, "@description" to a different string to describe the apartment size, depending on the size of each bedroom. If you're wondering why I haven't accounted for a common room, it's because you know it'll just get AirBnB'd out for tenants to afford rent and not actually be considered part of the living space. We are doing this so that later in our class, we can output a string using these new instance variables, that will become a gripping Craigslist ad headline.</p>
 
@@ -248,7 +217,7 @@ wilson_222.ad
 	</main>
 	<footer>
 		<div id="social_media">
-		<a href = "https://twitter.com/jess_richardson"> = <img class="social" src = "imgs/twitter.png"></a>
+		<a href = "https://twitter.com/jess_richardson"><img class="social" src = "imgs/twitter.png"></a>
 		<a href = "https://www.linkedin.com/in/richardsonjessie"><img class="social"  src = "imgs/linkedin.png"></a>
 		<a href = "https://github.com/jesskrich"> <img class="social" src = "imgs/github.png"></a>
 		<p><small>&copy; 2015 Jessie Richardson</small><p>

@@ -5,7 +5,7 @@ body {
 
 }
 
-/*#main { 
+/*#main {
 	background-color: #0BE0C6;
 
 }*/
@@ -45,33 +45,18 @@ nav {
 	padding:1em;*/
 }
 
-.test {
-	height:160px;
-	width:160px;
-	background-color:green;
-	display:inline;
-}
-
 .landing_nav {
 	width:10em;
 }
-
-/*.landing_nav .text_hover{
-	width:10em;
-	visibility: visible;
-  	opacity: 1;
-}*/
 
 li {
 	display: inline;
 	margin:1em;
 	}
 
-
 a:hover, a:active {
 	opacity:0.5;
 }
-
 
 #social_media {
 	width:30%;
@@ -87,4 +72,10 @@ a:hover, a:active {
 .social {
 	height:2.5em;
 	margin:1.5em;
+}
+
+
+/* added by brian */
+.hidden-links {
+	visibility: hidden;
 }

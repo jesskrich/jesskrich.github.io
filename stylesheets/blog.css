@@ -187,22 +187,12 @@ pre {
 }
 
 .project_blurb p {
-	/*display:inline;*/
 	padding-top: 0;
 	margin-top:0;
 	padding-left: 1em;
 	vertical-align:top;
 }
 
-/*.project_blurb p {
-	display:inline;
-	float:right;
-	}*/
-
-/*.project_image {
-	width:30%;
-	float:left;
-	}*/
 
 
 #social_media {
@@ -220,4 +210,8 @@ pre {
 	height:2.5em;
 	margin:1.5em;
 	clear:both;
+}
+
+#resume {
+	max-width:548.5px;
 }

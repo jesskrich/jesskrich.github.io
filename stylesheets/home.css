@@ -5,10 +5,6 @@ body {
 
 }
 
-/*#main { 
-	background-color: #0BE0C6;
-
-}*/
 
 header {
 	text-align:center;
@@ -55,12 +51,6 @@ nav {
 .landing_nav {
 	width:10em;
 }
-
-/*.landing_nav .text_hover{
-	width:10em;
-	visibility: visible;
-  	opacity: 1;
-}*/
 
 li {
 	display: inline;
